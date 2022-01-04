@@ -1,0 +1,15 @@
+$website-width: 1280px;
+$main-color: #ffbc00;
+$light-color: #f4f4f4;
+$medium-color: #cccccc;
+$dark-color: #333333;
+$bg-image: url("../images/showcase.jpg");
+
+// define function to set text color
+@function set_text_color($color) {
+	@if (lightness($color) > 50) {
+		@return #000;
+	} @else {
+		@return #fff;
+	}
+}
